@@ -79,7 +79,7 @@ export const Main = () => {
 
                         <div className="projects-1">
                             <div className="project-1-photo-container">
-                                <img className="project-1-photo" src={require('../assets/project-1-2.jpg')} />
+                                <img className="project-1-photo" alt="Desktop website for SaverLife budgeting App" src={require('../assets/project-1-2.jpg')} />
                             </div>
                             <div className="project-1-content">
                                 <h3>Featured Project</h3>
@@ -113,7 +113,7 @@ export const Main = () => {
 
                         <div className="projects-2">
                             <div className="project-2-photo-container">
-                                <img className="project-2-photo" src={require('../assets/weather.png')} />
+                                <img className="project-2-photo" alt="Desktop website for a Weather App" src={require('../assets/weather.png')} />
                             </div>
                             <div className="project-2-content">
                                 <h3>Featured Project</h3>
@@ -137,7 +137,7 @@ export const Main = () => {
 
                         <div className="projects-3">
                             <div className="project-3-photo-container">
-                                <img className="project-3-photo" src={require('../assets/snake.png')} />
+                                <img className="project-3-photo" alt="Desktop website for Snake Game App" src={require('../assets/snake.png')} />
                             </div>
                             <div className="project-3-content">
                                 <h3>Featured Project</h3>
@@ -172,9 +172,9 @@ export const Main = () => {
 
                 <section className="footer">
                     <div className="logo-box">
-                        <a target="_blank" href="https://github.com/JesusCGuerrero"><AiFillGithub className="icon-githubmobile"/></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/jesuscguerrero/"><AiOutlineLinkedin className="icon-linkedinmobile"/></a>
-                        <a target="_blank" href="https://codepen.io/JesusGuerrero"><AiOutlineCodepen className="icon-codepenmobile"/></a>
+                        <a href="https://github.com/JesusCGuerrero"><AiFillGithub className="icon-githubmobile"/></a>
+                        <a href="https://www.linkedin.com/in/jesuscguerrero/"><AiOutlineLinkedin className="icon-linkedinmobile"/></a>
+                        <a href="https://codepen.io/JesusGuerrero"><AiOutlineCodepen className="icon-codepenmobile"/></a>
                     </div>
                     <a className="footer-email" href="mailto:jesusclementguerrero@gmail.com">jesusclementguerrero@gmail.com</a>
                 </section>
