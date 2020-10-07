@@ -1,0 +1,50 @@
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20vh;
+    right: 96%;
+    height: 100px;
+}
+
+.icon-github, .icon-linkedin, .icon-codepen{
+    color: #8892b0;
+    font-size: 30px;
+    transition-duration: .2s;
+    position: fixed;
+}
+
+.icon-github:hover, .icon-linkedin:hover, .icon-codepen:hover{
+    color: rgb(16, 233, 168);
+    font-size: 34px;
+}
+
+
+.left-line {
+    border-left: 1px solid #8892b0;
+    position: fixed;
+    bottom: 0%;
+    right: 95%;
+    height: 13%
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .left-text {
+        display: none;
+    }
+
+    .left-line {
+        display: none;
+    }
+
+    .icon-box {
+        display: none;
+    }
+}
+
+/* Smart Phone Styles */
+@media only screen and (max-width: 768px) {
+
+}

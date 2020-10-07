@@ -1,0 +1,152 @@
+body {
+    background-color: #1e2733;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.svg-logo {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    width: 40px;
+    color: #8892b0;
+    cursor: pointer;
+    transition: fill .7s ease-out;
+    fill: rgba(0, 0, 0, 0);
+}
+
+.svg-logo:hover {
+    fill:rgb(16, 233, 168);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8%;
+    background-color:  #1e2733;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    position: fixed;
+    transition-duration: .3s;
+}
+
+.nav-logo {
+    font-size: 1.6rem;
+    margin-left: 45px;
+    color: rgb(16, 233, 168);
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-menu-item {
+    list-style: none;
+    margin: 0px 40px;
+    transition-duration: .8s;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: .3s;
+    color: #8892b0;
+}
+
+a:hover {
+    color: rgb(16, 233, 168);
+}
+
+.resume-btn {
+    border: 2px solid rgb(16, 233, 168);
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 0.7rem;
+    color: rgb(16, 233, 168);
+    padding: 0.50rem 1rem;
+    background-color: #1e2733;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: rgba(8, 173, 123, 0.288);
+}
+
+/* Everything below here is for the version of the nav bar that appears while not at the top of the page */
+
+.moving-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8%;
+    background-color:#1e273300;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    position: fixed;
+    transition-duration: .3s;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.253);
+}
+
+.moving-nav .resume-btn {
+    border: 2px solid rgb(16, 233, 168);
+    margin-left: 0px;
+    font-size: 0.7rem;
+
+}
+
+.moving-nav a {
+    font-size: .7rem;
+}
+
+.moving-nav h1 {
+    font-size: 1.6rem;
+}
+
+.moving-nav .nav-menu-item {
+    margin: 0px 15px;
+}
+
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .moving-nav {
+        display: none;
+    }
+}
+
+
+/* Smart Phone Styles */
+@media only screen and (max-width: 768px) {
+    .nav-menu-item {
+        display: none;
+    }
+
+    .resume-btn {
+    }
+
+    .nav-logo {
+        margin-left: 15px;
+        color: rgb(16, 233, 168);
+    }
+
+    .moving-nav {
+        z-index: 999;
+    }
+    
+    .moving-nav .resume-btn {
+        margin-left: 65%;
+    }
+  }

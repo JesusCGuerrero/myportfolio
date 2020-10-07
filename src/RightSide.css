@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.right-text {
+    writing-mode: vertical-rl;
+    color: #8892b0;
+    bottom: 15vh;
+    right: 4.5%;
+    position: fixed;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition-duration: .25s;
+    text-decoration: none;
+}
+
+.right-text:hover {
+    color: rgb(16, 233, 168);
+    margin-bottom: 3px;
+}
+
+.right-line {
+    border-left: 1px solid #8892b0;
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+    height: 13%
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+    .right-text {
+        display: none;
+    }
+
+    .right-line {
+        display: none;
+    }
+}
+
+/* Smart Phone Styles */
+@media only screen and (max-width: 768px) {
+
+}
