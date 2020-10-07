@@ -392,6 +392,7 @@
     }
 
     .projects-1, .projects-2, .projects-3 {
+        width: 100%;
         margin: 20px auto 30px auto;
         flex-direction: column-reverse;
     }
@@ -400,15 +401,15 @@
         display: block;
         margin: 0 auto;
         border-radius: 5px;
-        max-width: 345px;
         filter: blur(0);
+        width: 100%;
     }
 
     .project-1-content, .project-2-content, .project-3-content {
         display: flex;
         flex-flow: column;
         position: inherit;
-        max-width: 345px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
