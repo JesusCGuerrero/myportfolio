@@ -311,6 +311,16 @@
     margin-left: 5%;
 }
 
+.project-3-icons {
+    margin: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-3-icon-link, .project-3-icon-github {
+    padding: 0 10px;
+}
+
 /* Contact Section */
 
 .contact-container {

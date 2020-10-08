@@ -3,6 +3,7 @@ import '../Main.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineCodepen } from 'react-icons/ai';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export const Main = () => {
     return (
@@ -137,24 +138,28 @@ export const Main = () => {
 
                         <div className="projects-3">
                             <div className="project-3-photo-container">
-                                <img className="project-3-photo" alt="Desktop website for Snake Game App" src={require('../assets/snake.png')} />
+                                <img className="project-3-photo" alt="Desktop website for Snake Game App" src={require('../assets/project-2-1.jpg')} />
                             </div>
                             <div className="project-3-content">
                                 <h3>Featured Project</h3>
-                                <h2>React Snake</h2>
+                                <h2>React Games</h2>
                                 <p>
-                                    A fun mini-project using both React and CSS to make this re-take on the classic Snake. This project was a ton of fun and could easily be expanded upon to show local high-scores for example.
+                                    This app serves as an archive for games I make using React and CSS. I continually add to this project as I build new and more complex programs.
                                 </p>
-                                    <div className="project-3-frameworks">
-                                    <li>
-                                        Knex.js
-                                    </li>
-                                    <li>
-                                        Node.js
-                                    </li>
+                                <div className="project-3-frameworks">
                                     <li>
                                         React.js
                                     </li>
+                                    <li>
+                                        CSS
+                                    </li>
+                                    <li>
+                                        Javascript
+                                    </li>
+                                </div>
+                                <div className='project-3-icons'>
+                                    <a href="https://jesusreactgames.netlify.app/"><FaExternalLinkAlt className="project-3-icon-link"/></a>
+                                    <a href="https://github.com/JesusCGuerrero/reactgames"><AiFillGithub className="project-3-icon-link"/></a>
                                 </div>
                             </div>
                         </div>
