@@ -17,6 +17,7 @@
     flex-direction: column;
     min-height: 100vh;
     margin: auto;
+    animation: introfade 5s infinite;
 }
 
 .intro h1 {
