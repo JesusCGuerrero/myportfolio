@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 .right-text {
+    /* opacity: 0; */
     writing-mode: vertical-rl;
     color: #8892b0;
     bottom: 15vh;
@@ -14,17 +15,24 @@
     text-decoration: none;
 }
 
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8, .l9, .l10, 
+.l11, .l12, .l13, .l14, .l15, .l16, .l17, .l18, .l19, 
+.l20, .l21, .l22, .l23, .l24, .l25, .l26, .l27, .l28, .l29, .l30, .l31, .l32 {
+    opacity: 0;
+}
+
 .right-text:hover {
     color: rgb(16, 233, 168);
     margin-bottom: 3px;
 }
 
 .right-line {
+    opacity: 0;
     border-left: 1px solid #8892b0;
     position: fixed;
     bottom: 0%;
     right: 5%;
-    height: 13%
+    height: 0%
 }
 
 /* Tablet Styles */

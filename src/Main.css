@@ -12,6 +12,7 @@
 }
 
 .intro {
+    opacity: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,6 +48,7 @@
 }
 
 .intro-btn {
+    opacity: 0;
     border: 1.5px solid rgb(16, 233, 168);
     border-radius: 2px;
     width: 7.5rem;
@@ -74,6 +76,7 @@
 }
 
 .about {
+    opacity: 1;
     margin-top: 15%;
     margin-right: 50px;
     display: flex;
@@ -102,8 +105,6 @@
     margin-top: 90%;
     max-width: 250px;
 }
-
-
 
 .skills-list {
     color: rgb(16, 233, 168);
@@ -330,6 +331,7 @@
     min-height: 50vh;
     margin: auto;
 }
+
 .contact {
     margin-top: 20%;
     margin-right: 50px;
@@ -337,16 +339,19 @@
     flex-flow: column;
     margin-bottom: 140px;
 }
+
 .contact h3 {
     color: #ccd6f6;
     font-size: 1.6rem;
     margin-bottom: 3%;
 }
+
 .contact p {
     color: #8892b0;
     font-size: 0.9rem;
     font-weight: 400;
 }
+
 .contact-btn {
     border: 1.5px solid rgb(16, 233, 168);
     border-radius: 2px;
@@ -362,6 +367,7 @@
     text-decoration: none;
     text-align: center;
 }
+
 .contact-btn:hover {
     background-color: rgba(8, 173, 123, 0.288);
 }
@@ -372,6 +378,11 @@
 
 .footer-email {
     display: none;
+}
+
+/* Animation Stuff */
+.introt1, .introt2, .introt3, .introt4 {
+    opacity: 0;
 }
 
 /* Tablet Styles */

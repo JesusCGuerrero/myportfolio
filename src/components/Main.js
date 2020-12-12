@@ -1,26 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Main.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineCodepen } from 'react-icons/ai';
 import { FaExternalLinkAlt } from 'react-icons/fa';
+import gsap from 'gsap';
 
 export const Main = () => {
+
+    useEffect(() => {
+
+        // Intro Section Animations
+        gsap.to(".introt1", {duration: 1.5, delay: 1.3, css: {opacity: 1}})
+        gsap.to(".introt2", {duration: 1.5, delay: 2.5, css: {opacity: 1}})
+        gsap.to(".introt3", {duration: 1.5, delay: 3.5, css: {opacity: 1}})
+        gsap.to(".introt4", {duration: 1.5, delay: 5, css: {opacity: 1}})
+        gsap.to(".intro-btn", {duration: 1.5, delay: 6, css: {opacity: 1}})
+
+    }, [])
+
     return (
         <div className="content">
             <div className="main">
                 <section className="intro" id="intro">
-                    <h1>Hi, my name is</h1>
-                    <h2>Jesus Guerrero.</h2>
-                    <h3>I build things for the web.</h3>
-                    <p>
-                        I'm a software engineer based in Miami, FL specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.
+                    <h1><span className="introt1">Hi</span><span className="introt2">, my name is</span></h1>
+                    <h2><span className="introt2">Jesus Guerrero.</span></h2>
+                    <h3 className="introt3">I build things for the web.</h3>
+                    <p className="introt4">
+                        I'm a software engineer based in Miami, FL specializing in designing and building exceptional websites, applications, and everything in between.
                     </p>
                     <a href="mailto:jesusclementguerrero@gmail.com" className="intro-btn">Get In Touch</a>
                 </section>
 
                 <section className="about-container" id="about">
-                    <div className="about">
+                    <div className="about fade">
                         <div className="about-title-box">
                             <h1 className="about-title">About Me </h1>
                             <p className="about-line"></p>
