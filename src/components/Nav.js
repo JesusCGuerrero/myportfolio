@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../Nav.css';
-import gsap from 'gsap';
+import { gsap } from "gsap";
 
 export const Nav = () => {
 
@@ -14,6 +14,8 @@ export const Nav = () => {
         gsap.from(".n3", {duration: 3, delay: .4, opacity: 0})
         gsap.from(".n2", {duration: 3, delay: .6, opacity: 0})
         gsap.from(".n1", {duration: 3, delay: .8, opacity: 0})
+        gsap.from("path", {duration: 1, drawSVG: "0%"})
+
     }, [])
 
     window.onscroll = function() {scrollFunction()};

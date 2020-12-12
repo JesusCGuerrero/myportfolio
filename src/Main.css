@@ -48,7 +48,7 @@
 }
 
 .intro-btn {
-    opacity: 0;
+    opacity: 1;
     border: 1.5px solid rgb(16, 233, 168);
     border-radius: 2px;
     width: 7.5rem;
@@ -382,7 +382,7 @@
 
 /* Animation Stuff */
 .introt1, .introt2, .introt3, .introt4 {
-    opacity: 0;
+    opacity: 1;
 }
 
 /* Tablet Styles */

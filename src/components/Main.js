@@ -5,17 +5,36 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineCodepen } from 'react-icons/ai';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import gsap from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Main = () => {
 
     useEffect(() => {
-
         // Intro Section Animations
-        gsap.to(".introt1", {duration: 1.5, delay: 1.3, css: {opacity: 1}})
-        gsap.to(".introt2", {duration: 1.5, delay: 2.5, css: {opacity: 1}})
-        gsap.to(".introt3", {duration: 1.5, delay: 3.5, css: {opacity: 1}})
-        gsap.to(".introt4", {duration: 1.5, delay: 5, css: {opacity: 1}})
-        gsap.to(".intro-btn", {duration: 1.5, delay: 6, css: {opacity: 1}})
+        gsap.from(".introt1", {duration: 1.5, delay: 1.3, opacity: 0})
+        gsap.from(".introt2", {duration: 1.5, delay: 2.5, opacity: 0})
+        gsap.from(".introt3", {duration: 1.5, delay: 3.5, opacity: 0})
+        gsap.from(".introt4", {duration: 1.5, delay: 5, opacity: 0})
+        gsap.from(".intro-btn", {duration: 1.5, delay: 6, opacity: 0})
+        // About Section Animations
+        gsap.from(".about1", {scrollTrigger: {trigger: ".about1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".about2", {scrollTrigger: {trigger: ".about2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".about3", {scrollTrigger: {trigger: ".about3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".about4", {scrollTrigger: {trigger: ".about4", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".about5", {scrollTrigger: {trigger: ".about5", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+
+        // Project Section Animations
+        gsap.from(".p1", {scrollTrigger: {trigger: ".p1", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
+        gsap.from(".p2", {scrollTrigger: {trigger: ".p2", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
+        gsap.from(".p3", {scrollTrigger: {trigger: ".p3", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
+        gsap.from(".p4", {scrollTrigger: {trigger: ".p4", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
+
+        // Contact Section Animations
+        gsap.from(".contact1", {scrollTrigger: {trigger: ".contact1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".contact2", {scrollTrigger: {trigger: ".contact2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.from(".contact3", {scrollTrigger: {trigger: ".contact3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
 
     }, [])
 
@@ -35,23 +54,23 @@ export const Main = () => {
                 <section className="about-container" id="about">
                     <div className="about fade">
                         <div className="about-title-box">
-                            <h1 className="about-title">About Me </h1>
+                            <h1 className="about-title about1">About Me </h1>
                             <p className="about-line"></p>
                         </div>
 
-                        <p>
+                        <p className="about2">
                         I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
                         </p>
                         <br/>
-                        <p>
+                        <p className="about3">
                         In October of 2020, I graduated from Lambda School as a Full-Stack Web Developer.
                         </p>
                         <br/>
-                        <p>
+                        <p className="about4">
                         Here are a few technologies I've been working with recently:
                         </p>
 
-                        <ul className="skills-list">
+                        <ul className="skills-list about5">
                             <li>
                                 JavaScript (ES6+)
                             </li>
@@ -87,11 +106,11 @@ export const Main = () => {
                 </section>
 
                 <section className="projects-container" id="projects">
-                    <h3 className="projects-title">Some Things I've Built</h3>
+                    <h3 className="projects-title p1">Some Things I've Built</h3>
 
                     <div className="projects-box">
 
-                        <div className="projects-1">
+                        <div className="projects-1 p2">
                             <div className="project-1-photo-container">
                                 <img className="project-1-photo" alt="Desktop website for SaverLife budgeting App" src={require('../assets/project-1-2.jpg')} />
                             </div>
@@ -125,7 +144,7 @@ export const Main = () => {
                             </div>
                         </div>
 
-                        <div className="projects-2">
+                        <div className="projects-2 p3">
                             <div className="project-2-photo-container">
                                 <img className="project-2-photo" alt="Desktop website for a Weather App" src={require('../assets/weather.png')} />
                             </div>
@@ -149,7 +168,7 @@ export const Main = () => {
                             </div>
                         </div>
 
-                        <div className="projects-3">
+                        <div className="projects-3 p4">
                             <div className="project-3-photo-container">
                                 <img className="project-3-photo" alt="Desktop website for Snake Game App" src={require('../assets/project-2-1.jpg')} />
                             </div>
@@ -182,9 +201,9 @@ export const Main = () => {
 
                 <section className="contact-container" id="contact">
                     <div className="contact">
-                        <h3 className="contact-title">Get In Touch</h3>
-                        <p>I'm currently working as a freelance developer, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                        <a href="mailto:jesusclementguerrero@gmail.com" className="contact-btn">Say Hello</a>
+                        <h3 className="contact-title contact1">Get In Touch</h3>
+                        <p className="contact2">I'm currently working as a freelance developer, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <a href="mailto:jesusclementguerrero@gmail.com" className="contact-btn contact3">Say Hello</a>
                     </div>
                 </section>
 
