@@ -48,7 +48,7 @@
 }
 
 .intro-btn {
-    opacity: 1;
+    opacity: 0;
     border: 1.5px solid rgb(16, 233, 168);
     border-radius: 2px;
     width: 7.5rem;
@@ -381,9 +381,11 @@
 }
 
 /* Animation Stuff */
-.introt1, .introt2, .introt3, .introt4 {
-    opacity: 1;
+.introt1, .introt2, .introt3, .introt4, .about1, .about2, .about3, .about4, .about5, .p1, .p2, .p3, .p4, .contact1, .contact2, .contact3, .contact4 {
+    opacity: 0;
 }
+
+
 
 /* Tablet Styles */
 @media only screen and (max-width: 1024px) {

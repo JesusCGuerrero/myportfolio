@@ -13,28 +13,28 @@ export const Main = () => {
 
     useEffect(() => {
         // Intro Section Animations
-        gsap.from(".introt1", {duration: 1.5, delay: 1.3, opacity: 0})
-        gsap.from(".introt2", {duration: 1.5, delay: 2.5, opacity: 0})
-        gsap.from(".introt3", {duration: 1.5, delay: 3.5, opacity: 0})
-        gsap.from(".introt4", {duration: 1.5, delay: 5, opacity: 0})
-        gsap.from(".intro-btn", {duration: 1.5, delay: 6, opacity: 0})
+        gsap.to(".introt1", {duration: 1.5, delay: 2.3, opacity: 1})
+        gsap.to(".introt2", {duration: 1.5, delay: 4.5, opacity: 1})
+        gsap.to(".introt3", {duration: 1.5, delay: 6.5, opacity: 1})
+        gsap.to(".introt4", {duration: 1.5, delay: 8, opacity: 1})
+        gsap.to(".intro-btn", {duration: 1.5, delay: 9, opacity: 1})
         // About Section Animations
-        gsap.from(".about1", {scrollTrigger: {trigger: ".about1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".about2", {scrollTrigger: {trigger: ".about2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".about3", {scrollTrigger: {trigger: ".about3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".about4", {scrollTrigger: {trigger: ".about4", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".about5", {scrollTrigger: {trigger: ".about5", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.to(".about1", {scrollTrigger: {trigger: ".about1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".about2", {scrollTrigger: {trigger: ".about2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".about3", {scrollTrigger: {trigger: ".about3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".about4", {scrollTrigger: {trigger: ".about4", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".about5", {scrollTrigger: {trigger: ".about5", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
 
         // Project Section Animations
-        gsap.from(".p1", {scrollTrigger: {trigger: ".p1", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
-        gsap.from(".p2", {scrollTrigger: {trigger: ".p2", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
-        gsap.from(".p3", {scrollTrigger: {trigger: ".p3", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
-        gsap.from(".p4", {scrollTrigger: {trigger: ".p4", toggleActions: "restart none restart none"}, duration: 5, opacity: 0})
+        gsap.to(".p1", {scrollTrigger: {trigger: ".p1", toggleActions: "restart none restart none"}, duration: 5, opacity: 1})
+        gsap.to(".p2", {scrollTrigger: {trigger: ".p2", toggleActions: "restart none restart none"}, duration: 5, opacity: 1})
+        gsap.to(".p3", {scrollTrigger: {trigger: ".p3", toggleActions: "restart none restart none"}, duration: 5, opacity: 1})
+        gsap.to(".p4", {scrollTrigger: {trigger: ".p4", toggleActions: "restart none restart none"}, duration: 5, opacity: 1})
 
         // Contact Section Animations
-        gsap.from(".contact1", {scrollTrigger: {trigger: ".contact1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".contact2", {scrollTrigger: {trigger: ".contact2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
-        gsap.from(".contact3", {scrollTrigger: {trigger: ".contact3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 0})
+        gsap.to(".contact1", {scrollTrigger: {trigger: ".contact1", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".contact2", {scrollTrigger: {trigger: ".contact2", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
+        gsap.to(".contact3", {scrollTrigger: {trigger: ".contact3", toggleActions: "restart reset restart reset"}, duration: 5, opacity: 1})
 
     }, [])
 
@@ -59,11 +59,11 @@ export const Main = () => {
                         </div>
 
                         <p className="about2">
-                        I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
+                        I enjoy creating things that live on the internet. My goal is to always build products that provide pixel-perfect, performant experiences.
                         </p>
                         <br/>
                         <p className="about3">
-                        In October of 2020, I graduated from Lambda School as a Full-Stack Web Developer.
+                        In October of 2020, I graduated from the Full-Stack Web Developer program at Lambda School.
                         </p>
                         <br/>
                         <p className="about4">
@@ -100,6 +100,12 @@ export const Main = () => {
                             </li>
                             <li>
                                 Okta
+                            </li>
+                            <li>
+                                GSAP
+                            </li>
+                            <li>
+                                JQuery
                             </li>
                         </ul>
                     </div>

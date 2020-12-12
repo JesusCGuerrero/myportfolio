@@ -7,14 +7,14 @@ export const Nav = () => {
     useEffect(() => {
 
         // Logo Animations
-        gsap.from(".nav-logo", {duration: 1, delay: 1, opacity: 0, position: "relative", right: "5%"})
+        gsap.from(".nav-logo", {duration: 1, delay: 3, position: "relative", right: "5%"})
+        gsap.to(".nav-logo", {duration: 1, delay: 3, opacity: 1, position: "relative"})
 
         //Nav Right Side Animations
-        gsap.from(".n4", {duration: 1.5, delay: .2, opacity: 0})
-        gsap.from(".n3", {duration: 3, delay: .4, opacity: 0})
-        gsap.from(".n2", {duration: 3, delay: .6, opacity: 0})
-        gsap.from(".n1", {duration: 3, delay: .8, opacity: 0})
-        gsap.from("path", {duration: 1, drawSVG: "0%"})
+        gsap.to(".n4", {duration: 1.5, delay: 2.2, opacity: 1})
+        gsap.to(".n3", {duration: 3, delay: 2.4, opacity: 1})
+        gsap.to(".n2", {duration: 3, delay: 2.6, opacity: 1})
+        gsap.to(".n1", {duration: 3, delay: 2.8, opacity: 1})
 
     }, [])
 

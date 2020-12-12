@@ -1,7 +1,3 @@
-body {
-    background-color: #1e2733;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -34,9 +30,14 @@ html {
 }
 
 .nav-logo {
+    opacity: 0;
     font-size: 1.6rem;
     margin-left: 45px;
     color: rgb(16, 233, 168);
+}
+
+.n1, .n2, .n3, .n4 {
+    opacity: 0;
 }
 
 ol {
