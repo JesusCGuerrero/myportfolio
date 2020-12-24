@@ -10,7 +10,7 @@
 
 .icon-github, .icon-linkedin, .icon-codepen{
     opacity: 0;
-    color: #8892b0;
+    color: #ffffff;
     font-size: 30px;
     transition-duration: .2s;
     position: fixed;
@@ -23,10 +23,10 @@
 
 
 .left-line {
-    border-left: 1px solid #8892b0;
+    border-left: 3px solid #ffffff;
     position: fixed;
     bottom: 0%;
-    right: 95%;
+    right: 95.2%;
     opacity: 1;
     height: 0%
 }

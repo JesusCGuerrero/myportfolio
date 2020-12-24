@@ -48,9 +48,37 @@ table {
 }
 
 body {
-	background-color: #1e2733;
+	/* background-color: #e7e7e7; */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 30s ease infinite alternate-reverse;
+    background-size: 300% 300%;
 }
 
 .main {
 	visibility: hidden;
+}
+
+.curtain {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-webkit-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }

@@ -22,41 +22,47 @@
 }
 
 .intro h1 {
-    color: rgb(16, 233, 168);
-    font-size: 0.8rem;
-    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 
 .intro h2 {
-    color: #ccd6f6;
+    color: #ffffff;
     font-size: 3rem;
     margin-bottom: 1.5%;
 }
 
 .intro h3 {
-    color: #8892b0;
+    color: #dbdbdb;
     font-size: 3rem;
     margin-bottom: 5%;
 }
 
+.introt1 {
+    font-size: 5rem;
+    margin-left: 43%;
+}
+
 .intro p {
-    color: #8892b0;
+    color: #ffffff;
     max-width: 500px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.3rem;
     margin-bottom: 5%;
 }
 
 .intro-btn {
     opacity: 0;
-    border: 1.5px solid rgb(16, 233, 168);
-    border-radius: 2px;
-    width: 7.5rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1px;
+    width: 13rem;
     margin-top: 3%;
-    font-size: 0.7rem;
-    color: rgb(16, 233, 168);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     padding: 1rem .5rem;
-    background-color: #1e2733;
+    background-color: #1e273300;
     transition-duration: .3s;
     cursor: pointer;
     word-spacing: 2.5px;
@@ -65,20 +71,20 @@
 }
 
 .intro-btn:hover {
-    background-color: rgba(8, 173, 123, 0.288);
+    background-color: rgba(92, 92, 92, 0.288);
 }
 
 .about-container {
     display: flex;
-    max-width: 700px;
+    max-width: 80%;
     min-height: 100vh;
     margin: auto;
 }
 
 .about {
     opacity: 1;
-    margin-top: 15%;
-    margin-right: 50px;
+    margin-top: 18%;
+    width: 100%;
     display: flex;
     flex-flow: column;
 }
@@ -89,15 +95,15 @@
 }
 
 .about h1 {
-    color: #ccd6f6;
-    font-size: 1.6rem;
-    margin-bottom: 8%;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 2%;
 }
 
 .about p {
-    color: #8892b0;
-    font-size: 0.9rem;
-    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .pfp {
@@ -107,7 +113,7 @@
 }
 
 .skills-list {
-    color: rgb(16, 233, 168);
+    color: rgb(0, 255, 179);
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
     margin: 20px 0px 0px;
@@ -117,7 +123,7 @@
 
 .skills-list li {
     margin-bottom: 10px;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 
 /* Projects Section */
@@ -130,7 +136,7 @@
 }
 
 .projects-title {
-    color: #ccd6f6;
+    color: #ffffff;
     font-size: 1.6rem;
     margin-top: 7%;
     left: 40%;
@@ -148,13 +154,14 @@
 }
 
 .project-1-content h3 {
-    color: rgb(16, 233, 168);
-    font-size: 0.9rem;
+    color: rgb(0, 255, 179);
+    font-size: 1rem;
     font-weight: 500;
 }
 
 .project-1-content h2 {
-    color: #ccd6f6;
+    color: #ffffff;
+    font-size: 1.3rem;
     margin-bottom: 5%;
 }
 
@@ -175,9 +182,9 @@
 
 .project-1-content p {
     padding: 20px 20px 20px 25px;
-    background-color: #3d556e;
-    color: #ccd6f6;
-    font-weight: 400;
+    background-color: #2b3744a4;
+    color: #ffffff;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
@@ -185,10 +192,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    color: #ccd6f6;
+    color: #ffffff;
     list-style-type: none;
     margin-left: 220px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 2.5%;
 }
 
@@ -208,15 +215,16 @@
 }
 
 .project-2-content h3 {
-    color: rgb(16, 233, 168);
+    color: rgb(0, 255, 179);
     font-size: 0.9rem;
     font-weight: 500;
     text-align: left;
 }
 
 .project-2-content h2 {
+    font-size: 1.3rem;
     text-align: left;
-    color: #ccd6f6;
+    color: #ffffff;
     margin-bottom: 5%;
 }
 
@@ -237,18 +245,18 @@
 
 .project-2-content p {
     padding: 20px 20px 20px 25px;
-    background-color: #3d556e;
-    color: #ccd6f6;
-    font-weight: 400;
+    background-color: #2b3744a4;
+    color: #ffffff;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
 .project-2-frameworks {
     display: flex;
-    color: #ccd6f6;
+    color: #ffffff;
     list-style-type: none;
     margin-right: 50%;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 2.5%;
 }
 
@@ -266,14 +274,14 @@
 }
 
 .project-3-content h3 {
-    color: rgb(16, 233, 168);
+    color: rgb(0, 255, 179);
     font-size: 0.9rem;
     font-weight: 500;
 }
 
 .project-3-content h2 {
     text-align: right;
-    color: #ccd6f6;
+    color: #ffffff;
     margin-bottom: 5%;
 }
 
@@ -294,18 +302,18 @@
 
 .project-3-content p {
     padding: 20px 20px 20px 25px;
-    background-color: #3d556e;
-    color: #ccd6f6;
-    font-weight: 400;
+    background-color: #2b3744a4;
+    color: #ffffff;
+    font-weight: 500;
     font-size: 0.9rem;
 }
 
 .project-3-frameworks {
     display: flex;
-    color: #ccd6f6;
+    color: white;
     list-style-type: none;
     margin-left: 220px;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 2.5%;
 }
 
@@ -314,12 +322,14 @@
 }
 
 .project-3-icons {
-    margin: 5px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: flex-end;
 }
 
 .project-3-icon-link, .project-3-icon-github {
+    color: white;
+    font-size: 25px;
     padding: 0 10px;
 }
 
@@ -341,24 +351,25 @@
 }
 
 .contact h3 {
-    color: #ccd6f6;
-    font-size: 1.6rem;
+    color: #ffffff;
+    font-size: 3rem;
     margin-bottom: 3%;
 }
 
 .contact p {
-    color: #8892b0;
-    font-size: 0.9rem;
+    color: #ffffff;
+    font-size: 1.3rem;
     font-weight: 400;
+    margin-bottom: 3%;
 }
 
 .contact-btn {
-    border: 1.5px solid rgb(16, 233, 168);
+    border: 1.5px solid rgb(255, 255, 255);
     border-radius: 2px;
     width: 7.5rem;
     margin-top: 3%;
-    font-size: 0.7rem;
-    color: rgb(16, 233, 168);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
     padding: 1rem .5rem;
     background-color: #1e273300;
     transition-duration: .3s;
@@ -369,7 +380,7 @@
 }
 
 .contact-btn:hover {
-    background-color: rgba(8, 173, 123, 0.288);
+    background-color: rgba(92, 92, 92, 0.288);
 }
 
 .logo-box {
@@ -438,14 +449,14 @@
     }
 
     .project-1-content p, .project-2-content p, .project-3-content p {
-        background-color: rgba(15, 46, 63, 0.9);
+        background-color: rgba(15, 46, 63, 0.438);
     }
 
     .project-1-frameworks, .project-2-frameworks, .project-3-frameworks {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        color: #ccd6f6;
+        color: #ffffff;
         list-style-type: none;
         margin-left: 220px;
         font-weight: 400;
@@ -496,13 +507,19 @@
         display: block;
         margin-top: 10px;
         text-align: center;
-        font-size: .7rem;
-        font-weight: lighter;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer-email:hover {
+        color: rgb(16, 233, 168);
     }
 
     .icon-githubmobile, .icon-linkedinmobile, .icon-codepenmobile{
-        color: #8892b0;
-        font-size: 25px;
+        color: #ffffff;
+        font-size: 35px;
         transition-duration: .2s;
     }
     

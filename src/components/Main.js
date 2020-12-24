@@ -10,10 +10,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const Main = () => {
+    setTimeout(() => {
+        window.scrollTo(0, 0);
+    }, 2)
+    
 
     useEffect(() => {
         // Intro Section Animations
-        gsap.to(".introt1", {duration: 1.5, delay: 2.3, opacity: 1})
+        gsap.to(".introt1", {duration: 1, delay: 4, fontSize: "1.3rem", marginLeft: 0})
+        gsap.to(".introt1", {duration: 1.5, delay: 2, opacity: 1})
         gsap.to(".introt2", {duration: 1.5, delay: 4.5, opacity: 1})
         gsap.to(".introt3", {duration: 1.5, delay: 6.5, opacity: 1})
         gsap.to(".introt4", {duration: 1.5, delay: 8, opacity: 1})
@@ -46,7 +51,7 @@ export const Main = () => {
                     <h2><span className="introt2">Jesus Guerrero.</span></h2>
                     <h3 className="introt3">I build things for the web.</h3>
                     <p className="introt4">
-                        I'm a software engineer based in Miami, FL specializing in designing and building exceptional websites, applications, and everything in between.
+                        I'm a software engineer based in Miami, FL specializing in designing and building websites, applications, and everything in between.
                     </p>
                     <a href="mailto:jesusclementguerrero@gmail.com" className="intro-btn">Get In Touch</a>
                 </section>
@@ -59,7 +64,8 @@ export const Main = () => {
                         </div>
 
                         <p className="about2">
-                        I enjoy creating things that live on the internet. My goal is to always build products that provide pixel-perfect, performant experiences.
+                        A good website works. A great website feels good.<br/>
+                        I enjoy blending creativity and logic to produce high functioning and innovative designs for my clients.
                         </p>
                         <br/>
                         <p className="about3">

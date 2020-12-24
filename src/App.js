@@ -11,12 +11,14 @@ import gsap from "gsap";
 function App() {
 
   useEffect(() => {
-    gsap.from("body", {duration: 1, delay: 1, backgroundColor: "#e7e7e7"})
+    gsap.to(".curtain", {duration: 1, delay: .3, backgroundColor: "rgba(255, 255, 255, 0)"})
+    gsap.to(".curtain", {duration: .1, delay: 2, display: "none"})
     gsap.to(".main", {duration: 1.5, delay: 2, visibility: "visible"})
   }, [])
 
   return (
     <div className="wrapper">
+      <div className="curtain"></div>
       <div className="startup">
         <Logo />
       </div>

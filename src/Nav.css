@@ -5,23 +5,22 @@ html {
 .svg-logo {
     padding: 0px;
     margin: 0px;
-    height: 40px;
-    width: 40px;
-    color: #8892b0;
+    height: 60px;
+    width: 60px;
     cursor: pointer;
     transition: fill .7s ease-out;
-    fill: rgba(0, 0, 0, 0);
+    fill: rgba(255, 255, 255, 0);
 }
 
 .svg-logo:hover {
-    fill:rgb(16, 233, 168);
+    fill:rgb(255, 255, 255);
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     padding: 0.8%;
-    background-color:  #1e2733;
+    background-color:  #1e273300;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100%;
@@ -33,7 +32,7 @@ html {
     opacity: 0;
     font-size: 1.6rem;
     margin-left: 45px;
-    color: rgb(16, 233, 168);
+    color: rgb(255, 255, 255);
 }
 
 .n1, .n2, .n3, .n4 {
@@ -60,30 +59,36 @@ ol {
     margin-right: 50px;
 }
 
-a {
+.nav-menu a {
+    border: 2px solid rgba(255, 255, 255, 0);
+    font-size: 1.5rem;
     text-decoration: none;
-    transition-duration: .3s;
-    color: #8892b0;
+    transition-duration: .6s;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 9px;
 }
 
-a:hover {
-    color: rgb(16, 233, 168);
+.nav-menu a:hover {
+    border-color: white;
+    /* color: rgb(16, 233, 168); */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
 }
 
-.resume-btn {
-    border: 2px solid rgb(16, 233, 168);
-    border-radius: 5px;
+.nav-menu .resume-btn {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 9px;
     margin-left: 15px;
-    font-size: 0.7rem;
-    color: rgb(16, 233, 168);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     padding: 0.50rem 1rem;
-    background-color: #1e2733;
+    background-color: #ffffff00;
     transition-duration: .3s;
     cursor: pointer;
 }
 
-.resume-btn:hover {
-    background-color: rgba(8, 173, 123, 0.288);
+.nav-menu .resume-btn:hover {
+    background-color: rgba(92, 92, 92, 0.288);
 }
 
 /* Everything below here is for the version of the nav bar that appears while not at the top of the page */
@@ -103,14 +108,14 @@ a:hover {
 }
 
 .moving-nav .resume-btn {
-    border: 2px solid rgb(16, 233, 168);
+    border: 2px solid rgb(255, 255, 255);
     margin-left: 0px;
-    font-size: 0.7rem;
+    font-size: 1rem;
 
 }
 
 .moving-nav a {
-    font-size: .7rem;
+    font-size: 1rem;
 }
 
 .moving-nav h1 {
@@ -141,7 +146,7 @@ a:hover {
 
     .nav-logo {
         margin-left: 15px;
-        color: rgb(16, 233, 168);
+        color: rgb(255, 255, 255);
     }
     
     .moving-nav .resume-btn {
