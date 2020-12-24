@@ -137,13 +137,21 @@ ol {
 
 /* Smart Phone Styles */
 @media only screen and (max-width: 768px) {
+
+    .nav {
+        width: 105%;
+    }
+
     .nav-menu-item {
         display: none;
     }
 
-    .resume-btn {
+    .nav .resume-btn {
+        border: 2px solid rgb(255, 255, 255);
+        margin-right: 0px;
+        font-size: 1rem;
     }
-
+    
     .nav-logo {
         margin-left: 15px;
         color: rgb(255, 255, 255);
