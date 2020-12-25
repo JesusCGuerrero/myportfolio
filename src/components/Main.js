@@ -4,7 +4,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineCodepen } from 'react-icons/ai';
 import { FaExternalLinkAlt } from 'react-icons/fa';
-import gsap from 'gsap';
+import gsap, { Power4 } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,7 +17,7 @@ export const Main = () => {
 
     useEffect(() => {
         // Intro Section Animations
-        gsap.to(".introt1", {duration: 1, delay: 4, fontSize: "1.3rem", marginLeft: 0})
+        gsap.to(".introt1", {duration: .8, delay: 4, fontSize: "1.3rem", /*marginLeft: 0*/ ease: Power4.easeInOut})
         gsap.to(".introt1", {duration: 1.5, delay: 2, opacity: 1})
         gsap.to(".introt2", {duration: 1.5, delay: 4.5, opacity: 1})
         gsap.to(".introt3", {duration: 1.5, delay: 6.5, opacity: 1})
@@ -51,7 +51,7 @@ export const Main = () => {
                     <h2><span className="introt2">Jesus Guerrero.</span></h2>
                     <h3 className="introt3">I build things for the web.</h3>
                     <p className="introt4">
-                        I'm a software engineer based in Miami, FL specializing in designing and building websites, applications, and everything in between.
+                        I'm a software engineer based in Miami, FL specializing in designing and building websites, databases, applications, and everything in between.
                     </p>
                     <a href="mailto:jesusclementguerrero@gmail.com" className="intro-btn">Get In Touch</a>
                 </section>
@@ -64,7 +64,7 @@ export const Main = () => {
                         </div>
 
                         <p className="about2">
-                        A good website works. A great website feels good.<br/>
+                        {/* A good website works. A great website feels good.<br/> */}
                         I enjoy blending creativity and logic to produce high functioning and innovative designs for my clients.
                         </p>
                         <br/>
@@ -78,7 +78,7 @@ export const Main = () => {
 
                         <ul className="skills-list about5">
                             <li>
-                                JavaScript (ES6+)
+                                JS (ES6+)
                             </li>
                             <li>
                                 React
@@ -112,6 +112,12 @@ export const Main = () => {
                             </li>
                             <li>
                                 JQuery
+                            </li>
+                            <li>
+                                PostgreSQL
+                            </li>
+                            <li>
+                                SQLite3
                             </li>
                         </ul>
                     </div>

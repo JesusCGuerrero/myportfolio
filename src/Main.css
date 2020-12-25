@@ -42,7 +42,7 @@
 
 .introt1 {
     font-size: 5rem;
-    margin-left: 43%;
+    /* margin-left: 50vh; */
 }
 
 .intro p {
@@ -535,41 +535,36 @@
 
     body {
         overflow-x: hidden;
+        width: 100%;
+    }
+
+    .content {
+        max-width: 100%;
+        width: 85%;
     }
 
     .intro {
-        padding: 0 10%;
-    }
-
-    .intro h1 {
-        margin-bottom: 5%;
+        padding: 0;
     }
 
     .intro h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .intro h3 {
-        font-size: 1.5rem;
-    }
-
-    .intro {
-        font-size: 0.9rem;
-    }
-
-    .introt1 {
-        margin-left: 30%;
+        font-size: 2rem;
     }
 
     .about {
         margin-top: 0%;
         margin-right: 0%;
-        padding: 0 10%;
+        padding: 0;
         margin-bottom: 10%;
     }
 
     .about-container{
         flex-flow: column;
+        max-width: 100%;
     }
 
     .pfp {

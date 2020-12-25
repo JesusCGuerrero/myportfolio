@@ -130,7 +130,10 @@ ol {
 /* Tablet Styles */
 @media only screen and (max-width: 1024px) {
     .moving-nav {
-        display: none;
+        position: absolute;
+        /* display: none; */
+        transition-duration: 0;
+        box-shadow: none;
     }
 }
 
