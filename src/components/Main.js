@@ -170,7 +170,7 @@ export const Main = () => {
                                 <h3>Featured Project</h3>
                                 <h2>React Weather</h2>
                                 <p>
-                                    A simple and modern take on a weather app using react and the openWeather API to display current temperatures and is capable of forcasts 5 days ahead and is mobile friendly!
+                                    A simple and modern take on a weather application using react and the openWeather API to display current temperatures.
                                 </p>
                                     <div className="project-2-frameworks">
                                     <li>
