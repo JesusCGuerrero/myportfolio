@@ -220,7 +220,7 @@ export const Main = () => {
                 <section className="contact-container" id="contact">
                     <div className="contact">
                         <h3 className="contact-title contact1">Get In Touch</h3>
-                        <p className="contact2">I'm currently working as a freelance developer, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <p className="contact2">I'm currently working as a Solutions Engineer at Extend, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                         <a href="mailto:jesusclementguerrero@gmail.com" className="contact-btn contact3">Say Hello</a>
                     </div>
                 </section>
