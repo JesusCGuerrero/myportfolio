@@ -85,6 +85,12 @@ export const Main = () => {
                                 JS (ES6+)
                             </li>
                             <li>
+                                Shopify
+                            </li>
+                            <li>
+                                BigCommerce
+                            </li>
+                            <li>
                                 React
                             </li>
                             <li>
