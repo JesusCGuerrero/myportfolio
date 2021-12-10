@@ -71,9 +71,9 @@ export const Main = () => {
                         <p className="about3">
                         In October of 2020, I graduated from the Full-Stack Web Developer program at Lambda School.
                         <br/>
-                        I worked as a freelance developer until August 2021, when I accepted an offer as a Solutions Engineer at Extend,
+                        I worked as a freelance developer until August 2021, 
                         <br/>
-                        where I am currently employed full time.
+                        when I accepted an offer as a Solutions Engineer at Extend where I am currently employed full time.
                         </p>
                         <br/>
                         <p className="about4">
