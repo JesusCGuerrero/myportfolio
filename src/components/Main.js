@@ -51,7 +51,7 @@ export const Main = () => {
                     <h2><span className="introt2">Jesus Guerrero.</span></h2>
                     <h3 className="introt3">I build things for the web.</h3>
                     <p className="introt4">
-                        I'm a software engineer based in Miami, FL specializing in designing and building websites, databases, applications, and everything in between.
+                        I'm a software engineer based in Broken Arrow, OK specializing in designing and building websites, databases, applications, and everything in between.
                     </p>
                     <a href="mailto:jesusclementguerrero@gmail.com" className="intro-btn">Get In Touch</a>
                 </section>
@@ -70,6 +70,10 @@ export const Main = () => {
                         <br/>
                         <p className="about3">
                         In October of 2020, I graduated from the Full-Stack Web Developer program at Lambda School.
+                        <br/>
+                        I worked as a freelance developer until August 2021, when I accepted an offer as a Solutions Engineer at Extend, where I am currently employed full time.
+                        <br/>
+                        On my spare time I enjoy building strange applications, wood working, and making music.
                         </p>
                         <br/>
                         <p className="about4">
