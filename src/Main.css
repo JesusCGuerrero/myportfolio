@@ -139,6 +139,7 @@
     color: #ffffff;
     font-size: 1.6rem;
     margin-top: 7%;
+    margin-bottom: 55px;
     left: 40%;
     position: absolute;
 }
@@ -168,6 +169,8 @@
 .project-1-photo {
     border-radius: 5px;
     max-width: 450px;
+    padding-top: 3%;
+    max-height: 450px;
     filter: blur(1.5px);
 }
 

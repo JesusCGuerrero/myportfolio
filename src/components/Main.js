@@ -51,7 +51,11 @@ export const Main = () => {
                     <h2><span className="introt2">Jesus Guerrero.</span></h2>
                     <h3 className="introt3">I build things for the web.</h3>
                     <p className="introt4">
-                        I'm a software engineer based in Broken Arrow, OK specializing in designing and building websites, databases, applications, and everything in between.
+                        I'm a software engineer based in Broken Arrow, OK specializing in ecommerce platform integrations. I also work in general web and database development.
+                        <br/><br/>
+                         I am currently working as a Senior Solutions Engineer at Extend Inc and am currently our teams SME for Shopify, but I also work with other ecommerce platforms such as BigCommerce, WooCommerce and custom API solutions.
+                         <br/>
+                        I work in a B2B landscape, often in conjuction with development teams of our clients. Thanks to this, I get to meet a lot of great developers and work with differing tech stacks, meaning I often need to employ differing solutions.
                     </p>
                     <a href="mailto:jesusclementguerrero@gmail.com" className="intro-btn">Get In Touch</a>
                 </section>
@@ -71,9 +75,10 @@ export const Main = () => {
                         <p className="about3">
                         In October of 2020, I graduated from the Full-Stack Web Developer program at Lambda School.
                         <br/>
-                        I worked as a freelance developer until August 2021, 
-                        <br/>
-                        when I accepted an offer as a Solutions Engineer at Extend where I am currently employed full time.
+                        I worked as a freelance developer until August 2021,
+                        when I accepted an offer as a Solutions Engineer I at Extend Inc.
+                        In July 2022 I was promoted to Solutions Engineer II,
+                        then in March 2023 I was promoted to Senior Solutions Engineer.
                         </p>
                         <br/>
                         <p className="about4">
@@ -82,7 +87,7 @@ export const Main = () => {
 
                         <ul className="skills-list about5">
                             <li>
-                                JS (ES6+)
+                                Javascript
                             </li>
                             <li>
                                 Shopify
@@ -106,10 +111,10 @@ export const Main = () => {
                                 Python
                             </li>
                             <li>
-                                Redis
+                                Salesforce Commerce Cloud
                             </li>
                             <li>
-                                Plotly
+                                WooCommerce
                             </li>
                             <li>
                                 AWS
@@ -130,6 +135,7 @@ export const Main = () => {
                                 SQLite3
                             </li>
                         </ul>
+
                     </div>
                 </section>
 
@@ -140,16 +146,50 @@ export const Main = () => {
 
                         <div className="projects-1 p2">
                             <div className="project-1-photo-container">
-                                <img className="project-1-photo" alt="Desktop website for SaverLife budgeting App" src={require('../assets/project-1-2.jpg')} />
+                                <img className="project-1-photo" alt="Desktop website for SaverLife budgeting App" src={require('../assets/nzxt.png')} />
                             </div>
                             <div className="project-1-content">
                                 <h3>Featured Project</h3>
+                                <h2><a style={{textDecoration: "none", color: "white"}} target="_blank" href='https://nzxt.com/'>NZXT Product Protection</a></h2>
+                                <p>
+                                    Integrated Extend offers onto a headless Shopify website using React, Typescript, a custom PIMS and many other complicating factors.<br/>
+                                    This was a several month long project with many stages and launches. It was a great learning experience and I got to meet a great team at NZXT whom I stil work on updates with today. 
+                                </p>
+                                <div className="project-1-frameworks">
+                                    <li>
+                                        React
+                                    </li>
+                                    <li>
+                                        Typescript
+                                    </li>
+                                    <li>
+                                        Maxify
+                                    </li>
+                                    <li>
+                                        Next
+                                    </li>
+                                    <li>
+                                        Vercel
+                                    </li>
+                                    <li>
+                                        Shopify
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="projects-2 p3">
+                            <div className="project-2-photo-container">
+                                <img className="project-2-photo" alt="Desktop website for SaverLife budgeting App" src={require('../assets/project-1-2.jpg')} />
+                            </div>
+                            <div className="project-2-content">
+                            <h3>Featured Project</h3>
                                 <h2>SaverLife</h2>
                                 <p>
                                     A budgeting App that helps users budget their income to save money.
                                     Data-science prediction models visualized via plotly and cached via Redis. 
                                 </p>
-                                    <div className="project-1-frameworks">
+                                <div className="project-1-frameworks">
                                     <li>
                                         React.js
                                     </li>
@@ -171,66 +211,13 @@ export const Main = () => {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="projects-2 p3">
-                            <div className="project-2-photo-container">
-                                <img className="project-2-photo" alt="Desktop website for a Weather App" src={require('../assets/weather.png')} />
-                            </div>
-                            <div className="project-2-content">
-                                <h3>Featured Project</h3>
-                                <h2>React Weather</h2>
-                                <p>
-                                    A simple and modern take on a weather application using react and the openWeather API to display current temperatures.
-                                </p>
-                                    <div className="project-2-frameworks">
-                                    <li>
-                                        Knex.js
-                                    </li>
-                                    <li>
-                                        Node.js
-                                    </li>
-                                    <li>
-                                        React.js
-                                    </li>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="projects-3 p4">
-                            <div className="project-3-photo-container">
-                                <img className="project-3-photo" alt="Desktop website for Snake Game App" src={require('../assets/project-2-1.jpg')} />
-                            </div>
-                            <div className="project-3-content">
-                                <h3>Featured Project</h3>
-                                <h2>React Games</h2>
-                                <p>
-                                    This app serves as an archive for games I make using React and CSS. I continually add to this project as I build new and more complex programs.
-                                </p>
-                                <div className="project-3-frameworks">
-                                    <li>
-                                        React.js
-                                    </li>
-                                    <li>
-                                        CSS
-                                    </li>
-                                    <li>
-                                        Javascript
-                                    </li>
-                                </div>
-                                <div className='project-3-icons'>
-                                    <a href="https://jesusreactgames.netlify.app/"><FaExternalLinkAlt className="project-3-icon-link"/></a>
-                                    <a href="https://github.com/JesusCGuerrero/reactgames"><AiFillGithub className="project-3-icon-link"/></a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </section>
 
                 <section className="contact-container" id="contact">
                     <div className="contact">
                         <h3 className="contact-title contact1">Get In Touch</h3>
-                        <p className="contact2">I'm currently working as a Solutions Engineer at Extend, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        <p className="contact2">I'm currently working as a Senior Solutions Engineer at Extend, but my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
                         <a href="mailto:jesusclementguerrero@gmail.com" className="contact-btn contact3">Say Hello</a>
                     </div>
                 </section>
